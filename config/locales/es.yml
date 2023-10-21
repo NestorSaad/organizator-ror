@@ -1,0 +1,30 @@
+---
+es:
+  activerecord:
+    models:
+      category:
+        one: Categoría
+        others: Categorías
+  categories:
+    edit:
+      title: Editando categoría
+    form:
+      description: Descripción
+      name: Nombre
+    index:
+      table:
+        description: Descripción
+        name: Nombre
+      title: Listado de Categorías
+    new:
+      title: Crear categoría
+    show:
+      description: Descripción
+      name: Nombre
+  common:
+    are_you_sure: "¿Estás seguro?"
+    back: Atrás
+    destroy: Eliminar
+    edit: Editar
+    new_category: New category
+    show: Ver
