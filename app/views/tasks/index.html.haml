@@ -1,12 +1,12 @@
-%h1.block.text-xl.text-purple-500 Listing tasks
+%h1.block.text-xl.text-purple-500= t('.title')
 
 %table
   %thead
     %tr
-      %th Name
-      %th Description
-      %th Due date
-      %th Category
+      %th= t('.table.name')
+      %th= t('.table.description')
+      %th= t('.table.due_date')
+      %th= t('.table.category')
       %th
       %th
       %th
@@ -17,11 +17,11 @@
         %td= task.name
         %td= task.description
         %td= task.due_date
-        %td= task.category
-        %td= link_to 'Show', task
-        %td= link_to 'Edit', edit_task_path(task)
-        %td= link_to 'Destroy', task, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= task.category.name
+        %td= link_to t('common.show'), task
+        %td= link_to t('common.edit'), edit_task_path(task)
+        %td= link_to t('common.destroy'), task, :method => :delete, :data => { :confirm => t('common.are_you_sure') }
 
 %br
 
-= link_to 'New Task', new_task_path
+= link_to t('.botton.new'), new_task_path

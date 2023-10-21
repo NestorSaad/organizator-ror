@@ -5,6 +5,9 @@ es:
       category:
         one: Categoría
         others: Categorías
+      task:
+        one: Tarea
+        others: Tareas
   categories:
     edit:
       title: Editando categoría
@@ -16,15 +19,40 @@ es:
         description: Descripción
         name: Nombre
       title: Listado de Categorías
+      botton:
+        new: Crear categoría
     new:
       title: Crear categoría
     show:
       description: Descripción
       name: Nombre
   common:
-    are_you_sure: "¿Estás seguro?"
+    are_you_sure: ¿Estás seguro?
     back: Atrás
     destroy: Eliminar
     edit: Editar
-    new_category: New category
     show: Ver
+  tasks:
+    edit:
+      title: Editando tarea
+    form:
+      category: Categoría
+      description: Descripción
+      due_date: Fecha de vencimiento
+      name: Nombre
+    index:
+      table:
+        category: Categoría
+        description: Descripción
+        due_date: Fecha de vencimiento
+        name: Nombre
+      title: Listado de tareas
+      botton:
+        new: Crear tarea
+    new:
+      title: Crear tarea
+    show:
+      category: Categoría
+      description: Descripción
+      due_date: Fecha de vencimiento
+      name: Nombre

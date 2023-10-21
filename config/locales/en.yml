@@ -5,6 +5,9 @@ en:
       category:
         one: Category
         others: Categories
+      task:
+        one: Task
+        others: Tasks
   categories:
     edit:
       title: Editing category
@@ -16,6 +19,8 @@ en:
         description: Description
         name: Name
       title: Listing Categories
+      botton:
+        new: Create category
     new:
       title: Create category
     show:
@@ -26,5 +31,28 @@ en:
     back: Back
     destroy: Destroy
     edit: Edit
-    new_category: New category
     show: Show
+  tasks:
+    edit:
+      title: Editing Task
+    form:
+      category: Category
+      description: Description
+      due_date: Due date
+      name: Name
+    index:
+      table:
+        category: Category
+        description: Description
+        due_date: Due date
+        name: Name
+      title: Listing Tasks
+      botton:
+        new: Create Task
+    new:
+      title: Create Task
+    show:
+      category: Category
+      description: Description
+      due_date: Due date
+      name: Name
