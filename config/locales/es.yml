@@ -15,12 +15,12 @@ es:
       description: Descripción
       name: Nombre
     index:
+      botton:
+        new: Crear categoría
       table:
         description: Descripción
         name: Nombre
       title: Listado de Categorías
-      botton:
-        new: Crear categoría
     new:
       title: Crear categoría
     show:
@@ -31,7 +31,11 @@ es:
     back: Atrás
     destroy: Eliminar
     edit: Editar
+    new_category: New category
     show: Ver
+  task:
+    errors:
+      invalid_due_date: La fecha no puede ser en el pasado
   tasks:
     edit:
       title: Editando tarea
@@ -41,14 +45,14 @@ es:
       due_date: Fecha de vencimiento
       name: Nombre
     index:
+      botton:
+        new: Crear tarea
       table:
         category: Categoría
         description: Descripción
         due_date: Fecha de vencimiento
         name: Nombre
       title: Listado de tareas
-      botton:
-        new: Crear tarea
     new:
       title: Crear tarea
     show:

@@ -74,3 +74,5 @@ group :development do
   gem 'hamlit-rails'
 end
 
+
+gem "devise", "~> 4.9"

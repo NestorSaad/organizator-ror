@@ -16,7 +16,7 @@
         %td= category.description
         %td= link_to t('common.show'), category
         %td= link_to t('common.edit'), edit_category_path(category)
-        %td= link_to t('common.destroy'), category, :method => :delete, :data => { :confirm => t('common.are_you_sure') }
+        %td= link_to t('common.destroy'), category, :data => { turbo_method: :delete, :confirm => t('common.are_you_sure') }
 
 %br
 
