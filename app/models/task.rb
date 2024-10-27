@@ -10,6 +10,8 @@ class Task < ApplicationRecord
 
   validate :due_date_validity
 
+  accepts_nested_attributes_for :participating_users, allow_destroy: true
+
   def due_date_validity
     return if due_date.blank?
     return if due_date > Date.today
