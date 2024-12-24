@@ -23,8 +23,8 @@ development:
   <<: *default
   database: organizator_development
   host: localhost
-  user: platzi
-  password: platzi
+  username: platzi
+  password: nj
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
@@ -60,8 +60,8 @@ test:
   <<: *default
   database: organizator_test
   host: localhost
-  user: platzi
-  password: platzi
+  username: platzi
+  password: nj
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
