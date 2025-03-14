@@ -6,7 +6,7 @@ class Task < ApplicationRecord
   has_many :participants, through: :participating_users, source: :user
 
   validates_presence_of :name, :description, :participating_users
-  validates_uniqueness_of :name,  case_insensitive: false
+  validates_uniqueness_of :name, case_insensitive: false
 
   validate :due_date_validity
 
