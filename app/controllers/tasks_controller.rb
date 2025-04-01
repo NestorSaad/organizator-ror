@@ -14,6 +14,7 @@ class TasksController < ApplicationController
   # GET /tasks/new
   def new
     @task = Task.new
+    @task.participating_users.build
   end
 
   # GET /tasks/1/edit
