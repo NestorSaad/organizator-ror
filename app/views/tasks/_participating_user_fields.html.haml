@@ -1,3 +1,6 @@
 .nested-fields
   = f.input :user_id, collection: User.all - [current_user]
   = f.input :role
+
+  = link_to 'borrar', '#', data: { action: 'nested-form#remove_association' }
+  = f.hidden_field :_destroy

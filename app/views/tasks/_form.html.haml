@@ -7,9 +7,15 @@
     = f.input :description, label: t('.description')
     = f.input :due_date, label: t('.due_date')
     = f.association :category, label: t('.category')
-    .participants
+    .participants{ 'data-controller': 'nested-form' }
+      %template{ 'data-nested-form-target': 'template' }
+        = f.simple_fields_for :participating_users, Participant.new, child_index: 'NEW_RECORD' do |participant|
+          = render 'participating_user_fields', f: participant
+
       = f.simple_fields_for :participating_users do |participant|
         = render 'participating_user_fields', f: participant
 
+      %div{ 'data-nested-form-target': 'add_object' }
+        = link_to 'otro', '#', data: { action: 'nested-form#add_association'}
   .form-actions
     = f.button :submit
