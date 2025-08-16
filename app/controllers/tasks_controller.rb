@@ -1,11 +1,17 @@
 # frozen_string_literal: true
 
 class TasksController < ApplicationController
+  load_and_authorize_resource
+
   before_action :set_task, only: %i[show edit update destroy]
 
   # GET /tasks or /tasks.json
   def index
-    @tasks = Task.all
+    @tasks = Task.joins(:participants).where(
+      'owner_id = ? OR participants.user_id = ?',
+      current_user.id,
+      current_user.id
+    ).group(:id)
   end
 
   # GET /tasks/1 or /tasks/1.json

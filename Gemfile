@@ -52,6 +52,8 @@ gem 'simple_form'
 
 # Before from console gem install 'i18n-tasks'
 gem 'rails-i18n'
+gem "devise", ">= 4.9"
+gem 'cancancan'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -74,5 +76,3 @@ group :development do
   gem 'hamlit-rails'
 end
 
-
-gem "devise", ">= 4.9"
